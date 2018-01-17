@@ -1,0 +1,25 @@
+<!-- you can kuweka hapa your header, 
+    then remove all the headers in the tabs 
+    and give a padding top equal to the height of the header
+
+    note... this method will help use a single header in the whole tabs section
+-->
+
+
+<!-- <ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle icon-only>
+        <ion-icon name='menu'></ion-icon>
+      </button>
+      <ion-title>
+        Vicky app
+      </ion-title>
+    </ion-navbar>
+  </ion-header> -->
+
+<ion-tabs>
+      <ion-tab tabIcon="book" tabTitle="Books" [root]="tab1Root"></ion-tab>
+      <ion-tab tabIcon="videocam" tabTitle="Video" [root]="tab2Root"></ion-tab>
+      <ion-tab tabIcon="chatbubbles" tabTitle="Chat" [root]="tab3Root"></ion-tab>
+  </ion-tabs>
+
