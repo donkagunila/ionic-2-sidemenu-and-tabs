@@ -22,4 +22,17 @@ export class BooksPage {
     console.log('ionViewDidLoad BooksPage');
   }
 
+  getNav() {    
+    var navs = this.app.getRootNavs();
+    if (navs && navs.length > 0) {
+      return navs[0];
+    }
+    return this.app.getActiveNav();
+  }
+
+  openPage(){
+    let nav = this.getNav();
+    nav.push('thenextpage');
+  }
+
 }
